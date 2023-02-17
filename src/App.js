@@ -13,11 +13,11 @@ function App() {
   return (
     <>
 
-    <main className=' m-5 p-5 lg:max-w-xl lg:mx-auto bg-white rounded shadow'>
+    <main className=' m-5 p-5 xl: max-w-4xl xl:mx-auto bg-white rounded shadow'>
 
-      <header className='flex flex-col items-center justify-center mb-5'>
+      <header className='flex flex-col items-center justify-center mb-5 xl:flex-row xl:justify-between'>
         <div>
-          <h2 className='font-bold tracking-wide text-4xl mb-3'>INVOICER</h2>
+          <h1 className='font-bold tracking-wide text-4xl mb-3'>INVOICER</h1>
         </div>
 
         <div>
@@ -49,7 +49,7 @@ function App() {
 
       <section className='flex flex-col items-end justify-end'>
 
-      <h2>Kiprop Hezron</h2>
+      <h2 className='text-xl uppercase'>Kiprop Hezron</h2>
       <p>Address</p>
       
 
@@ -58,7 +58,7 @@ function App() {
 
       <section>
 
-      <h2>Client Name</h2>
+      <h2 className='text-xl uppercase'>Client Name</h2>
       <p>Client Address</p>
       
 
@@ -66,15 +66,19 @@ function App() {
 
 
 
-      <article>
+      <article className='flex items-end justify-end my-7'>
         <ul>
-          <li>Invoice number</li>
-          <li>Invoice date</li>
-          <li>Due date</li>
+          <li> <span className='font-bold'>Invoice number:</span></li>
+          <li> <span className='font-bold'>Invoice date:</span></li>
+          <li> <span className='font-bold'>Due date:</span></li>
         </ul>
       </article>
 
 {/*Table */}
+
+<div className='my-5'>
+  Table section
+</div>
 
 
 
@@ -84,23 +88,25 @@ function App() {
 
 {/*Notes */}
 
-<section>
+<section className='mb-5'>
   <p>Notes to the client</p>
 </section>
 {/*End of Notes */}
 
 {/*footer */}
 
-<ul>
-  <li>Your name</li>
-  <li>Your email</li>
-  <li>Phone number</li>
-  <li>Bank</li>
-  <li>Account holder</li>
-  <li>Account number</li>
-  <li>Website</li>
+<footer>
+<ul className='flex flex-wrap items-center justify-center' >
+  <li> <span className='font-bold'>Account number</span> </li>
+  <li> <span className='font-bold'>Your name</span> </li>
+  <li><span className='font-bold'>Your email</span></li>
+  <li> <span className='font-bold'> Phone number</span></li>
+  <li> <span className='font-bold'>Bank</span> </li>
+  <li> <span className='font-bold'>Account holder</span> </li>
+  <li> <span className='font-bold'>Website</span> </li>
 
 </ul>
+</footer>
 
 
 {/*End of footer */}
